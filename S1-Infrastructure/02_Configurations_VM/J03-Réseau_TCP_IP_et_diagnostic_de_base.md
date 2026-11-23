@@ -32,7 +32,7 @@ ipconfig /all
 
 Preuve :
 
-![Ipconfig-SRV-AD.png](S1-Infrastructure/02_Configurations_VM/Captures/Ipconfig-SRV-AD.png)
+![Ipconfig-SRV-AD.png](Captures/Ipconfig-SRV-AD.png)
 
 **Sur ubuntu-srv** (Linux) :
 
@@ -44,7 +44,7 @@ getent hosts
 
 Preuve : 
 
-![IpBrief-Ubuntu](S1-Infrastructure/02_Configurations_VM/Captures/IpBrief-Ubuntu.png)
+![IpBrief-Ubuntu](Captures/IpBrief-Ubuntu.png)
 
 **Sur glpi-srv **(Linux) :
 
@@ -56,7 +56,7 @@ getent hosts
 
 Preuve :
 
-![IpBrief-GLPI](S1-Infrastructure/02_Configurations_VM/Captures/IpBrief-GLPI.png)
+![IpBrief-GLPI](Captures/IpBrief-GLPI.png)
 
 
 ## Diagnostic et tests de connectivité (H2)
@@ -64,12 +64,12 @@ Preuve :
 1. **Tests ICMP (Ping inter-VM)**
 Vérification de la connectivité de niveau 3 (couche réseau) entre le serveur SRV-AD et les autres machines du sous-réseau 192.168.56.0/24 :
 
-![Ping-SRV-AD.png](S1-Infrastructure/02_Configurations_VM/Captures/Ping-SRV-AD.png)
+![Ping-SRV-AD.png](Captures/Ping-SRV-AD.png)
 
 
 2. **Test de résolution DNSVérification du fonctionnement du service DNS depuis SRV-AD** :
 
-![Nslookup-SRV-AD.png](S1-Infrastructure/02_Configurations_VM/Captures/Nslookup-SRV-AD.png)
+![Nslookup-SRV-AD.png](Captures/Nslookup-SRV-AD.png)
 
 
 
