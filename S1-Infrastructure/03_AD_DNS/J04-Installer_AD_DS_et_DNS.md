@@ -1,7 +1,7 @@
 # Installation AD DS et DNS
 
 Projet Support N1/N2 et virtualisation - Semaine 1 - J04 (H1 / H2 / H3)
-Technicien : [Nom Prénom] - Date : 23/11/2026
+Technicien : [Aymeric] - Date : 23/11/2026
 Domaine : lab.local - Serveur concerné : SRV-AD (192.168.56.10)
 
 ---
@@ -37,7 +37,7 @@ Promotion du serveur SRV-AD en contrôleur de domaine d'une nouvelle forêt lab.
 
 Dans le Gestionnaire de serveur (Serveur local), on vérifie que le nom de l'ordinateur est bien SRV-AD, que le domaine est lab.local, que l'adresse Ethernet est 192.168.56.10, et que les rôles AD DS et DNS apparaissent dans le volet de gauche.
 
-![Rôles AD DS et DNS - domaine lab.local](captures/j04_roles_adds_dns.png)
+![Rôles_domaine_lab.local](captures/j05h3scr7.png)
 
 ## H3 - Organisation de l'annuaire et groupes
 
@@ -49,7 +49,7 @@ Dans la console Utilisateurs et ordinateurs Active Directory (dsa.msc), créatio
 
 ### Preuve : structure des OU et groupe de sécurité
 
-![Structure des OU et groupe de sécurité](captures/j04_ou_groupes.png)
+![Structure_OU](captures/j05h3scr6.png)
 
 ---
 
