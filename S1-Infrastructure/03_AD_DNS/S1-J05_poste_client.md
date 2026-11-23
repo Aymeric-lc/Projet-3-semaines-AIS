@@ -1,7 +1,7 @@
 # Comptes AD et poste client - Configuration et jointure
 
 Projet Support N1/N2 et virtualisation - Semaine 1 - J05 (H1 / H2)
-Technicien : [Nom Prénom] - Date : 23/11/2026
+Technicien : [Aymeric] - Date : 23/11/2026
 Domaine : lab.local - Poste concerné : PC-CLIENT (192.168.56.20) - Serveur : SRV-AD (192.168.56.10)
 
 ---
@@ -12,7 +12,7 @@ Préparation du poste client Windows 11 (PC-CLIENT) : configuration réseau, ren
 
 ## H1 - Configuration réseau et renommage du poste
 
-Le poste est configuré avec une adresse IP statique et pointe vers SRV-AD comme serveur DNS (indispensable pour trouver le domaine), puis il est renommé en PC-CLIENT.
+Le poste nommé PC-CLIENT est configuré avec une adresse IP statique et pointe vers SRV-AD comme serveur DNS.
 
 ```powershell
 # Renommer le poste
@@ -23,7 +23,7 @@ New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress 192.168.56.20 -PrefixLeng
 Set-DnsClientServerAddress -InterfaceAlias "Ethernet" -ServerAddresses 192.168.56.10
 ```
 
-Point clé : le DNS du poste doit pointer vers 192.168.56.10 (le contrôleur de domaine), sinon la jointure au domaine échoue.
+Point clé : le DNS du poste doit pointer vers 192.168.56.10 (le DC), sinon la jointure au domaine échoue.
 
 ### Preuve : adressage et résolution DNS
 
@@ -34,7 +34,8 @@ nslookup lab.local 192.168.56.10
 
 On vérifie que PC-CLIENT a bien l'IP 192.168.56.20, le DNS 192.168.56.10, et que lab.local se résout vers 192.168.56.10.
 
-![Adressage IP et résolution DNS](captures/j05_h1_ip_dns.png)
+![Adressage_IP](captures/Ipconfig-PC-CLIENT.png)
+![Nslookup](captures/Nslookup-PC-CLIENT.png)
 
 ## H2 - Jointure au domaine et comptes de test
 
@@ -53,13 +54,12 @@ New-ADUser -Name "Zishtest" -SamAccountName "Zishtest" `
   -AccountPassword (Read-Host -AsSecureString "Mot de passe") -Enabled $true
 ```
 
-Précaution : on utilise uniquement des comptes et mots de passe de test, jamais d'identifiants réels.
-
 ### Preuve : jointure au domaine
 
 Dans les Propriétés système (sysdm.cpl), le poste affiche bien son appartenance au domaine lab.local.
 
-![Jointure de PC-CLIENT au domaine lab.local](captures/j05_h2_jointure.png)
+![Jointure_au_domaine-1](captures/j05_h2.1_jointure.png)
+![Jointure_au_domaine-2](captures/j05_h2.2_jointure.png)
 
 ### Preuve : liste des comptes de test
 
@@ -67,18 +67,6 @@ Dans les Propriétés système (sysdm.cpl), le poste affiche bien son appartenan
 Get-ADUser -Filter * | Select-Object Name, Enabled
 ```
 
-![Liste des comptes de test](captures/j05_h2_comptes.png)
-
----
-
-## Captures
-
-| Fichier | Contenu |
-|---|---|
-| captures/j05_h1_ip_dns.png | ipconfig /all et nslookup lab.local |
-| captures/j05_h2_jointure.png | Jointure de PC-CLIENT au domaine |
-| captures/j05_h2_comptes.png | Liste des comptes de test dans l'AD |
-
----
+![Liste_comptes_test](captures/j05_h2_comptes.png)
 
 Note : le H3 du J05 (simulation d'un refus d'accès et intervention N1) est documenté dans la fiche `S1_J05_fiche_incident_compte.md`.
