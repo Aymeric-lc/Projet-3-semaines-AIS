@@ -36,11 +36,11 @@ Preuve :
 
 **Sur ubuntu-srv** (Linux) :
 
-'''bash
+```bash
 ip -br a
 ip route
 getent hosts
-'''
+```
 
 Preuve : 
 
@@ -48,11 +48,11 @@ Preuve :
 
 **Sur glpi-srv **(Linux) :
 
-'''bash
+```bash
 ip -br a
 ip route
 getent hosts
-'''
+```
 
 Preuve :
 
