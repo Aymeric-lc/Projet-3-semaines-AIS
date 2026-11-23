@@ -67,7 +67,12 @@ Vérification de la connectivité de niveau 3 (couche réseau) entre le serveur 
 
 
 2. **Matrice de connectivité**
-Source \ DestinationSRV-AD (.10)PC-CLIENT (.20)ubuntu-srv (.30)glpi-srv (.40)SRV-AD (.10)-OK   OK   OK   PC-CLIENT (.20)OK-OKOKubuntu-srv (.30)OK[cite: 7]OK-OKglpi-srv (.40)OK[cite: 6]OKOK-
+
+Source \ Destination,SRV-AD (.10),PC-CLIENT (.20),ubuntu-srv (.30),glpi-srv (.40)
+SRV-AD (.10),-,OK,OK,OK
+PC-CLIENT (.20),OK,-,OK,OK
+ubuntu-srv (.30),OK,OK,-,OK
+glpi-srv (.40),OK,OK,OK,-
 
 3. **Test de résolution DNSVérification du fonctionnement du service DNS depuis SRV-AD** :
 
