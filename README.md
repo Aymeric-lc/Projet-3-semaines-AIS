@@ -18,7 +18,7 @@ Construction d'un laboratoire de 4 machines virtuelles sur Proxmox, montée en c
 | UBUNTU-SRV | SSH + HTTP | 192.168.56.30 | Ubuntu Server |
 | GLPI-SRV | GLPI + SQL | 192.168.56.40 | Debian 13 |
 
-Réseau : 192.168.56.0/24, mode Host-Only (bridge Proxmox vmbr2), isolé, sans passerelle. DNS du domaine : SRV-AD (192.168.56.10). Domaine : lab.local. Mises à jour via un adaptateur NAT secondaire ponctuel. L'AD et GLPI ne sont jamais exposés à Internet.
+Réseau : 192.168.56.0/24, mode Host-Only (bridge Proxmox vmbr2). DNS du domaine : SRV-AD (192.168.56.10). Domaine : lab.local. Mises à jour via un adaptateur NAT secondaire ponctuel. L'AD et GLPI ne sont jamais exposés à Internet.
 
 Hyperviseur : Proxmox VE 9 - pool projets-ais.
 
