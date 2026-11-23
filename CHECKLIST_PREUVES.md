@@ -22,7 +22,7 @@ Lab : 4 VM sur Proxmox - SRV-AD (.10), PC-CLIENT (.20), UBUNTU-SRV (.30), GLPI-S
 ### J03 - Réseau TCP/IP
 - [ ] Table IP + captures ipconfig / ip -br a
 - [ ] Matrice de connectivité avant/après (ping, traceroute)
-- [ ] Schéma réseau v1 (draw.io)
+- [x] Schéma réseau v1 (draw.io)
 
 ### J04 - AD DS et DNS
 - [ ] Fiche état du serveur + snapshot avant promotion
