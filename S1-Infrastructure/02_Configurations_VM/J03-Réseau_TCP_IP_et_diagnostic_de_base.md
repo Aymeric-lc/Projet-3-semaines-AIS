@@ -14,14 +14,14 @@ Configuration de l'adressage IP statique de l'infrastructure virtuelle sur un r�
 
 ## Architecture et plan d'adressage (H1)
 
-Mise en place des adresses IP fixes en `/24` (`255.255.255.0`) pour l'ensemble des machines virtuelles du laboratoire :
+Mise en place des adresses IP fixes en /24 (255.255.255.0) pour l'ensemble des machines virtuelles du laboratoire :
 
 | Machine | Système d'exploitation | Interface | Adresse IP | Masque | Rôle |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **SRV-AD** | Windows Server | Ethernet | `192.168.56.10` | `/24` | Contrôleur de domaine / DNS |
-| **PC-CLIENT** | Windows 11 | Ethernet | `192.168.56.20` | `/24` | Poste client |
-| **ubuntu-srv** | Linux (Ubuntu) | `ens18` | `192.168.56.30` | `/24` | Serveur Linux |
-| **glpi-srv** | Linux (Debian/Ubuntu) | `ens19` | `192.168.56.40` | `/24` | Serveur GLPI[cite: 5, 6] |
+| **SRV-AD** | Windows Server | Ethernet | 192.168.56.10 | /24 | Contrôleur de domaine / DNS |
+| **PC-CLIENT** | Windows 11 | Ethernet | 192.168.56.20 | /24 | Poste client |
+| **ubuntu-srv** | Linux (Ubuntu) | ens18 | 192.168.56.30 | /24 | Serveur Linux |
+| **glpi-srv** | Linux (Debian/Ubuntu) | ens19 | 192.168.56.40 | /24 | Serveur GLPI[cite: 5, 6] |
 
 ### Vérification des interfaces IP
 
