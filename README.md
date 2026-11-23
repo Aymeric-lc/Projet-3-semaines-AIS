@@ -9,7 +9,7 @@ Construction d'un laboratoire de 4 machines virtuelles sur Proxmox, montée en c
 
 ## Architecture du laboratoire
 
-![Cartographie réseau](S1-Infrastructure/01_Architecture/cartographie_reseau_v1.png)
+![Cartographie réseau](S1-Infrastructure/01_Architecture/cartographie_reseau_v1.png.png)
 
 | Machine | Rôle | IP (Host-Only) | OS |
 |---|---|---|---|
