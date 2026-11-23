@@ -28,6 +28,7 @@ Mise en place des adresses IP fixes en /24 (255.255.255.0) pour l'ensemble des m
 **Sur SRV-AD** (Windows) :
 ```powershell
 ipconfig /all
+```
 
 Preuve :
 
