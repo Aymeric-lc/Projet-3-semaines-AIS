@@ -54,9 +54,9 @@ Lab : 4 VM sur Proxmox - SRV-AD (.10), PC-CLIENT (.20), UBUNTU-SRV (.30), GLPI-S
 - [ ] Checklist pile Web/DB + snapshot
 
 ### J09 - Déploiement et sécurisation GLPI
-- [ ] Page des contrôles d'installation GLPI
-- [ ] Connexion à http://192.168.56.40
-- [ ] Captures des accès + matrice des droits
+- [x] Page des contrôles d'installation GLPI
+- [x] Connexion à http://192.168.56.40
+- [x] Captures des accès + matrice des droits
 
 ### J10 - Inventaire automatisé
 - [ ] Présence des agents sur chaque OS
@@ -64,9 +64,9 @@ Lab : 4 VM sur Proxmox - SRV-AD (.10), PC-CLIENT (.20), UBUNTU-SRV (.30), GLPI-S
 - [ ] Table des écarts GLPI/AD + actions
 
 ### J11 - Centre de services et qualification N1
-- [ ] Structure du centre de services (catégories, groupes, profils)
-- [ ] Matrice priorité / SLA (P1 à P4)
-- [ ] 3 tickets de test qualifiés complets
+- [x] Structure du centre de services (catégories, groupes, profils)
+- [x] Matrice priorité / SLA (P1 à P4)
+- [x] 3 tickets de test qualifiés complets
 
 ### J12 - Incidents Windows et AD (N1)
 - [ ] Ticket I-01 (DNS client) + nslookup avant/après
