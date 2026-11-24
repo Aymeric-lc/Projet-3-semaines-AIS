@@ -35,9 +35,9 @@ Lab : 4 VM sur Proxmox - SRV-AD (.10), PC-CLIENT (.20), UBUNTU-SRV (.30), GLPI-S
 - [x] Fiche incident compte + procédure N1
 
 ### J06 - Ubuntu : exploitation
-- [ ] Accès SSH validé + comptes créés
-- [ ] Capture service HTTP + logs (systemctl, journalctl, curl)
-- [ ] Procédure de restauration du service web
+- [x] Accès SSH validé + comptes créés
+- [x] Capture service HTTP + logs (systemctl, journalctl, curl)
+- [x] Procédure de restauration du service web
 
 ### J07 - Bilan Semaine 1
 - [ ] Checklist infrastructure complétée
