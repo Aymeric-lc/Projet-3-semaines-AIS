@@ -29,10 +29,10 @@ Les snapshots permettent de revenir à un état stable (retour arrière). Ce fic
 
 | Fichier | Contenu |
 |---|---|
-| captures/snap_SRV-AD.png | Onglet Snapshots de SRV-AD |
-| captures/snap_PC-CLIENT.png | Onglet Snapshots de PC-CLIENT |
-| captures/snap_UBUNTU-SRV.png | Onglet Snapshots de UBUNTU-SRV |
-| captures/snap_GLPI-SRV.png | Onglet Snapshots de GLPI-SRV |
+| ![](Captures/Snap-AD.png) | Onglet Snapshots de SRV-AD |
+| ![](Captures/Snap-Client.png) | Onglet Snapshots de PC-CLIENT |
+| ![](Captures/Snap-Ubuntu.png) | Onglet Snapshots de UBUNTU-SRV |
+| ![](Captures/Snap-glpi.png) | Onglet Snapshots de GLPI-SRV |
 
 ---
 
