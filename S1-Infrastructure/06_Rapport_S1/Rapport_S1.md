@@ -45,13 +45,13 @@ Schéma : voir `01_Architecture/cartographie_reseau_v2.png`.
 
 ## 5. Difficultés rencontrées
 
-- _______________________________________________
+- Mise en place et partage du Proxmox au sein de l'équipe
 - _______________________________________________
 
 ## 6. Auto-évaluation
 
 - Ce qui a bien fonctionné : _______________________________________
-- Ce qui reste à améliorer : _______________________________________
+- Ce qui reste à améliorer : La communication et le partage des tâches (surtout avec Gregory DatiS)
 - Compétences travaillées : virtualisation, réseau TCP/IP, AD DS, DNS, exploitation Linux, support N1
 
 ## 7. Conclusion
