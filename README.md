@@ -31,7 +31,7 @@ Hyperviseur : Proxmox VE 9 - pool projets-ais.
 | SRV-AD (AD DS, DNS, GPO) | [à compléter] |
 | PC-CLIENT (poste, incidents, droits) | [à compléter] |
 | UBUNTU-SRV (SSH, web, services) | [à compléter] |
-| GLPI-SRV (GLPI, inventaire, tickets, SLA) | ASLAM Zishan |
+| GLPI-SRV (GLPI, inventaire, tickets, SLA) | [à compléter] |
 | Cartographie réseau | ASLAM Zishan |
 | Transverse (sécurité, sauvegardes, documentation) | [à compléter] |
 
