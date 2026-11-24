@@ -20,18 +20,18 @@ Lab : 4 VM sur Proxmox - SRV-AD (.10), PC-CLIENT (.20), UBUNTU-SRV (.30), GLPI-S
 - [ ] Captures cartes réseau + snapshots `BASE-VM` sur chaque VM
 
 ### J03 - Réseau TCP/IP
-- [ ] Table IP + captures ipconfig / ip -br a
-- [ ] Matrice de connectivité avant/après (ping, traceroute)
+- [x] Table IP + captures ipconfig / ip -br a
+- [x] Matrice de connectivité avant/après (ping, traceroute)
 - [x] Schéma réseau v1 (draw.io)
 
 ### J04 - AD DS et DNS
-- [ ] Fiche état du serveur + snapshot avant promotion
-- [ ] Capture domaine lab.local + DNS
-- [ ] Structure des OU + test nslookup
+- [x] Fiche état du serveur + snapshot avant promotion
+- [x] Capture domaine lab.local + DNS
+- [x] Structure des OU + test nslookup
 
 ### J05 - Comptes AD et poste client
-- [ ] ipconfig /all + nslookup lab.local (PC-CLIENT)
-- [ ] Capture jointure au domaine + liste des comptes de test
+- [x] ipconfig /all + nslookup lab.local (PC-CLIENT)
+- [x] Capture jointure au domaine + liste des comptes de test
 - [x] Fiche incident compte + procédure N1
 
 ### J06 - Ubuntu : exploitation
