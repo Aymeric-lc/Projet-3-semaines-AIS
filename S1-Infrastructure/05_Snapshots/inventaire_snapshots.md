@@ -16,14 +16,14 @@ Les snapshots permettent de revenir à un état stable (retour arrière). Ce fic
 
 | VM | IP | Snapshot | Date | État capturé |
 |---|---|---|---|---|
-| SRV-AD | 192.168.56.10 | BASE-VM | | OS installé, avant promotion AD |
-| SRV-AD | 192.168.56.10 | S1-VALIDEE | | Fin Semaine 1 |
-| PC-CLIENT | 192.168.56.20 | BASE-VM | | OS installé, avant jointure domaine |
-| PC-CLIENT | 192.168.56.20 | S1-VALIDEE | | Fin Semaine 1 |
-| UBUNTU-SRV | 192.168.56.30 | BASE-VM | | OS installé, avant services |
-| UBUNTU-SRV | 192.168.56.30 | S1-VALIDEE | | Fin Semaine 1 |
-| GLPI-SRV | 192.168.56.40 | BASE-VM | | OS installé, avant pile GLPI |
-| GLPI-SRV | 192.168.56.40 | S1-VALIDEE | | Fin Semaine 1 |
+| SRV-AD | 192.168.56.10 | BASE-VM | 22/11/2026| OS installé, avant promotion AD |
+| SRV-AD | 192.168.56.10 | S1-VALIDEE | 24/11/2026| Fin Semaine 1 |
+| PC-CLIENT | 192.168.56.20 | BASE-VM | 22/11/2026 | OS installé, avant jointure domaine |
+| PC-CLIENT | 192.168.56.20 | S1-VALIDEE | 24/11/2026 | Fin Semaine 1 |
+| UBUNTU-SRV | 192.168.56.30 | BASE-VM | 22/11/2026 | OS installé, avant services |
+| UBUNTU-SRV | 192.168.56.30 | S1-VALIDEE | 22/11/2026 | Fin Semaine 1 |
+| GLPI-SRV | 192.168.56.40 | BASE-VM | 22/11/2026 | OS installé, avant pile GLPI |
+| GLPI-SRV | 192.168.56.40 | S1-VALIDEE | 24/11/2026 | Fin Semaine 1 |
 
 ## Captures
 
