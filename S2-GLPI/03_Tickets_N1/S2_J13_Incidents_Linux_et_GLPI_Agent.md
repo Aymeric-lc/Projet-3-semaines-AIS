@@ -7,7 +7,7 @@
 
 ## Contexte
 
-Pour cette journée, j'ai traité deux incidents côté Linux : l'arrêt de la remontée d'inventaire de l'agent GLPI (I-04), et l'indisponibilité du service Web de l'Ubuntu (I-05). Pour chaque incident, j'ai suivi la même logique : constater le symptôme (preuve avant), diagnostiquer la vraie cause, corriger à la source, puis valider (preuve après). Aucun mot de passe n'apparait dans les tickets ni dans cette fiche.
+Pour cette journée, nous avons deux incidents côté Linux : l'arrêt de la remontée d'inventaire de l'agent GLPI (I-04), et l'indisponibilité du service Web de l'Ubuntu (I-05). Pour chaque incident, nous avons suivi la même logique : constater le symptôme (preuve avant), diagnostiquer la vraie cause, corriger à la source, puis valider (preuve après). Aucun mot de passe n'apparait dans les tickets ni dans cette fiche.
 
 ---
 
