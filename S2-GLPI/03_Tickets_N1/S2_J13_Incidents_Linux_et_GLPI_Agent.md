@@ -1,7 +1,7 @@
 
 # J13 - Incidents Linux et GLPI Agent (N1/N2)
 
-**Auteur :** ASLAM Zishan
+**Auteur :** GROUPE
 **Date :** 25/11/2026
 **Semaine :** S2 - GLPI et centre de services
 **Environnement :** lab.local (Proxmox) - serveur GLPI 192.168.56.40, serveur Ubuntu 192.168.56.30
