@@ -25,7 +25,7 @@ La machine ne remonte plus dans GLPI, l'inventaire ne se met plus à jour. Sur l
 systemctl status glpi-agent
 ```
 
-![Agent GLPI inactif](captures/j13_agent_inactive.png)
+![Agent GLPI inactif](captures/j13.agentinactive.png)
 
 ### Diagnostic
 
@@ -38,7 +38,7 @@ curl -I http://192.168.56.40
 
 Le `curl` vers le serveur GLPI répond bien (code HTTP valide), donc le serveur et le réseau sont corrects : la cause est bien l'agent local arrêté.
 
-![Journaux de l'agent](captures/j13_agent_journalctl.png)
+![Journaux de l'agent](captures/j13.agentjournalctl.png)
 
 ### Correction
 
@@ -107,7 +107,7 @@ Le port 80 est de nouveau en écoute, le site répond.
 curl -I http://192.168.56.30
 ```
 
-![Réponse HTTP 200](captures/j13_http_200ok.png)
+![Réponse HTTP 200](captures/j13.http200ok.png)
 
 ![Site Ubuntu de nouveau accessible](captures/Web-ubuntu-accessible.png)
 
