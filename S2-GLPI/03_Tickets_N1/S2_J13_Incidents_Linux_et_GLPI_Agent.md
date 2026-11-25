@@ -119,4 +119,4 @@ curl -I http://192.168.56.30
 | I-04 Agent GLPI | Service `glpi-agent` arrêté | `systemctl start` + `--force` | Résolu |
 | I-05 HTTP Ubuntu | nginx à l'écoute sur un mauvais port (erreur de config) | Rétablir `listen 80` + `reload` | Résolu |
 
-Ce que je retiens : pour les deux incidents, le réflexe gagnant c'est de distinguer les chaines techniques. Pour I-04, agent local arrêté alors que le serveur GLPI répondait. Pour I-05, service bien démarré mais sur le mauvais port. Dans les deux cas, regarder au bon endroit (le port, le bon service) évite de conclure trop vite à une panne plus grave.
+Ce que nous retenons : pour les deux incidents, le réflexe gagnant c'est de distinguer les chaines techniques. Pour I-04, agent local arrêté alors que le serveur GLPI répondait. Pour I-05, service bien démarré mais sur le mauvais port. Dans les deux cas, regarder au bon endroit (le port, le bon service) évite de conclure trop vite à une panne plus grave.
