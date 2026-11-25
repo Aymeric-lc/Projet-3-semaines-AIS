@@ -103,19 +103,13 @@ L'utilisateur signale qu'il n'a plus accès au dossier partagé `\\Srv-ad\j12` q
 
 ### Diagnostic
 
-Sur SRV-AD, j'inspecte le dossier `C:\Partage-J12` (onglet Sécurité des propriétés). Les droits NTFS sont corrects : le groupe `GrpUtilisateurs` dispose déja des droits Modification et Lecture et exécution sur le dossier.
+Le probleme ne vient donc pas du compte utilisateur : le compte est membre du groupe `GrpUtilisateurs`, il bénéficie donc des droits accordés a ce groupe.
 
-Le probleme ne vient donc pas du dossier mais de l'appartenance de l'utilisateur : le compte n'est pas membre du groupe `GrpUtilisateurs`, il ne bénéficie donc pas des droits accordés a ce groupe.
+Sur SRV-AD, j'inspecte le dossier `C:\Partage-J12` (onglet Sécurité des propriétés). Les droits NTFS ne sont pas corrects : le groupe `GrpUtilisateurs` ne dispose pas des droits Modification et Lecture et exécution sur le dossier.
 
 ### Correction
 
-Plutot que d'ajouter l'utilisateur directement sur le dossier, j'applique la bonne pratique (AGDLP) : j'ajoute le compte au groupe qui porte déja les droits.
-
-```powershell
-Add-ADGroupMember -Identity "GrpUtilisateurs" -Members "<compte>"
-```
-
-Point important : le jeton d'accès (liste des groupes) n'est recalculé qu'a l'ouverture de session. J'ai donc demandé a l'utilisateur de fermer puis rouvrir sa session pour que le nouveau groupe soit pris en compte.
+Accord des droits NTFS nécessaires au groupe `GrpUtilisateurs`
 
 ![Correction des droits sur le partage](captures/Reparation-Dossier-partage.png)
 
@@ -135,4 +129,4 @@ Apres reconnexion, l'utilisateur ouvre le dossier `\\Srv-ad\j12` sans erreur et 
 | I-02 Compte | Compte désactivé dans l'AD | Enable-ADAccount | Résolu |
 | I-03 Partage | Compte non membre du groupe ayant les droits | Add-ADGroupMember + reconnexion | Résolu |
 
-Ce que je retiens de cette journée : avant de chercher un probleme compliqué, je vérifie toujours la configuration de base. Les trois incidents avaient une cause simple (un enregistrement manquant, un compte désactivé, une appartenance de groupe manquante) et pas un bug logiciel. Le réflexe diagnostic (constater, vérifier a la source, corriger, valider avec l'utilisateur) fonctionne pour les trois.
+Ce que je retiens de cette journée : avant de chercher un probleme compliqué, je vérifie toujours la configuration de base. Les trois incidents avaient une cause simple (un enregistrement manquant, un compte désactivé, droits NTFS manquants) et pas un bug logiciel. Le réflexe diagnostic (constater, vérifier a la source, corriger, valider avec l'utilisateur) fonctionne pour les trois.
