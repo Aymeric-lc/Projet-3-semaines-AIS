@@ -15,7 +15,7 @@ Pour chaque incident j'ai gardé la même logique : je constate le symptôme (pr
 
 ## Incident I-01 - Résolution de nom GLPI (DNS)
 
-**Ticket GLPI :** [n°]
+**Ticket GLPI :** [n°5]
 **Catégorie :** Réseau / DNS
 
 ### Symptôme (avant)
@@ -50,7 +50,7 @@ Vérification complémentaire de l'accès a l'interface, par IP puis par nom :
 
 ## Incident I-02 - Compte utilisateur désactivé
 
-**Ticket GLPI :** [n°]
+**Ticket GLPI :** [n°6]
 **Catégorie :** Comptes et accès
 
 ### Symptôme (avant)
