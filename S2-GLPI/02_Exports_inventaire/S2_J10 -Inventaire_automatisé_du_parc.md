@@ -116,3 +116,10 @@ Get-ADComputer -Filter * -Properties OperatingSystem,IPv4Address,LastLogonDate |
 > L'AD indique un `LastLogonDate` au 22/11/2026 pour SRV-AD et PC-CLIENT, alors que les deux tournent le 25/11. L'attribut n'est répliqué que tous les 9 à 14 jours environ. Il ne prouve pas qu'une machine est inactive : on se fie à la date de remontée GLPI et à un ping.
  
 ---
+
+## Auto-contrôle
+ 
+- [ ] Les trois tâches sont réalisées ou l'écart est expliqué
+- [ ] Les preuves sont datées
+- [ ] Les configurations et incidents sont reproductibles
+- [ ] Les secrets sont exclus des captures
