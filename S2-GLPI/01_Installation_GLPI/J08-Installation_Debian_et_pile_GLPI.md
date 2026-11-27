@@ -57,19 +57,19 @@ Création dans MariaDB d'une base dédiée en `utf8mb4` et d'un utilisateur SQL 
 ```sql
 CREATE DATABASE glpi_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 CREATE USER 'glpi_user'@'localhost' IDENTIFIED BY '<MOT_DE_PASSE_FORT>';
-GRANT ALL PRIVILEGES ON glpi_db.* TO 'glpi_user'@'localhost';
+GRANT ALL PRIVILEGES ON glpi_db.* TO 'glpi'@'localhost';
 FLUSH PRIVILEGES;
 EXIT;
 ```
 
-Vérification des droits accordés à l'utilisateur `glpi_user` et réalisation d'un snapshot de la VM `SRV-GLPI` en fin de séance :
+Vérification des droits accordés à l'utilisateur `glpi` et réalisation d'un snapshot de la VM `SRV-GLPI` en fin de séance :
 
 ```bash
-sudo mariadb -e "SHOW GRANTS FOR 'glpi_user'@'localhost';"
+sudo mariadb -e "SHOW GRANTS FOR 'glpi'@'localhost';"
 ```
 
 ### Preuve : privilèges SQL et snapshot de fin de séance
 
-Vérification de la portée minimale des droits accordés à `'glpi_user'@'localhost'` sur `glpi_db.*` (sans affichage du mot de passe) et validation de l'instantané de la VM.
+Vérification de la portée minimale des droits accordés à `'glpi'@'localhost'` sur `glpi_db.*` (sans affichage du mot de passe) et validation de l'instantané de la VM.
 
 ![Privilèges-SRV-GLPI](captures/Verification-secrets-glpi.png)
